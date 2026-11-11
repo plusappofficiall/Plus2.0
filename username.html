@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus 2.0 - Kullanıcı Adı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 110px;
+            color: #FF6B00;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 15px;
+            letter-spacing: -4px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 400;
+            color: #FF6B00;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .at-symbol {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FF6B00;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+        input {
+            width: 100%;
+            padding: 16px 20px 16px 38px;
+            background-color: #000000;
+            border: 1px solid #FF6B00;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #FF8C00;
+        }
+
+        input::placeholder {
+            color: #555555;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #FF6B00;
+            color: #000000;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">+</div>
+        <div class="title">Sana nasıl hitap edelim?</div>
+        <form>
+            <div class="input-wrapper">
+                <span class="at-symbol">@</span>
+                <input type="text" placeholder="kullanıcıadı" required>
+            </div>
+            <button type="submit" class="btn">Devam Et</button>
+        </form>
+    </div>
+</body>
+  </html>
